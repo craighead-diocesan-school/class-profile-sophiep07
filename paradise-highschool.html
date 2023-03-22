@@ -8,15 +8,17 @@
         <a href="student-profiles.html">Student Profiles</a>
     </nav>
     <main>
-        <img src="school-outside.jpg" alt="A picture of the outside of the school">
         <p>
             Our school aims to prepare students for a future in an unknown job market, where people skills are as important as tech skills. We give our girls access to the resources they need to explore their world and develop into the people they want to be.
         </p>
-        <img src="school-inside.jpg" alt="A picture of the inside of the school">
         <p>
             Personal drive is celebrated here, and we like to give our students the opportunity to pursue any area that interests them.
         </p>
-        <img src="students-working.jpg" alt="A picture of students working">
+        <div>
+            <img src="school-outside.jpg" alt="A picture of the outside of the school">
+            <img src="school-inside.jpg" alt="A picture of the inside of the school">
+            <img src="students-working.jpg" alt="A picture of students working">
+        </div>
     </main>
     <footer>
         &copy;Paradise Highschool 2023
@@ -24,5 +26,12 @@
 </body>
 
 <style>
-
+    img {
+        height:200px;
+        padding: 2px;
+    }
+    div {
+        display:flex;
+        justify-content: center;
+    }
 </style>
