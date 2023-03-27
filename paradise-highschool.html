@@ -34,4 +34,16 @@
         display:flex;
         justify-content: center;
     }
+    body {
+    display: grid;
+    grid: " h    h    h  " 5em
+          " n    m    m  " auto
+          " n    m    m  " auto
+          " f    f    f  " 5em
+          / 1fr  5fr  1fr;
+  }
+  header { grid-area: h; }
+  nav    { grid-area: n; }
+  main   { grid-area: m; }
+  footer { grid-area: f; }
 </style>
