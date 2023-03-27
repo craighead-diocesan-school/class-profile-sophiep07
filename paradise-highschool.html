@@ -1,6 +1,8 @@
 <body>
     <header>
-        Paradise Highschool
+        <h1>
+            Paradise Highschool
+        </h1>
     </header>
     <nav>
         <a href="paradise-highschool.html">Home Page</a>
@@ -26,13 +28,17 @@
 </body>
 
 <style>
+    }
     img {
         height:200px;
         padding: 2px;
     }
     div {
         display:flex;
-        justify-content: center;
+        justify-content: left;
+    }
+    nav {
+        display: block;
     }
     body {
     display: grid;
@@ -40,7 +46,19 @@
           " n    m    m  " auto
           " n    m    m  " auto
           " f    f    f  " 5em
-          / 1fr  5fr  1fr;
+          / 1fr  5fr  5fr;
+  header { grid-area: h; }
+  nav    { grid-area: n; }
+  main   { grid-area: m; }
+  footer { grid-area: f; }
+  
+    display: grid;
+    grid: " h    h    h    h" auto
+          " n    n    n    n" auto
+          " .    m    m    ." auto
+          " .    m    m    ." auto
+          " f    f    f    f" auto
+          / 1fr  1fr  1fr  1fr;
   }
   header { grid-area: h; }
   nav    { grid-area: n; }
