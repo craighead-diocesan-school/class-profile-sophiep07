@@ -1,0 +1,91 @@
+<body>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <header>
+        <h1>
+            Paradise Highschool
+        </h1>
+    </header>
+    <nav>
+        <a href="paradise-highschool.html">Home Page</a>
+        <a href="our-class.html">Our Class</a>
+        <a href="student-profiles.html">Student Profiles</a>
+    </nav>
+    <main>
+        <p>
+            Our school aims to prepare students for a future in an unknown job market, where people skills are as important as tech skills. We give our girls access to the resources they need to explore their world and develop into the people they want to be.
+        </p>
+        <p>
+            Personal drive is celebrated here, and we like to give our students the opportunity to pursue any area that interests them.
+        </p>
+        <div>
+            <img src="school-outside.jpg" alt="A picture of the outside of the school">
+            <img src="school-inside.jpg" alt="A picture of the inside of the school">
+            <img src="students-working.jpg" alt="A picture of students working">
+        </div>
+    </main>
+    <footer>
+        &copy;Paradise Highschool 2023
+    </footer>
+</body>
+
+<style>
+    p {
+        font-family: 'Cormorant', serif;    
+    }
+    img {
+        height:170px;
+        padding: 2px;
+    }
+    div {
+        display:flex;
+        justify-content: center;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        border: 3px solid #804e47;
+        border-radius: 1em;
+        margin-top: 20px;
+        margin-right: 5px;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-bottom: 2%;
+        font-family: 'Nanum Myeongjo', serif;
+        text-align: center;
+    }
+    a:hover {
+        color:#e7decd;
+        border-color: #0a122a;
+        background-color: #804e47;
+    }
+    h1 {
+        color: #804e47;
+        text-shadow: 2px 2px #0a122a;
+        font-family: 'Abril Fatface', cursive; 
+        text-align: center;  
+    }     
+    body {
+        background-color: #e7decd;
+    display: grid;
+    grid: " h    h    h    h" auto
+          " n    n    n    n" auto
+          " .    m    m    ." auto
+          " .    m    m    ." auto
+          " f    f    f    f" auto
+          / 1fr  1fr  1fr  1fr;
+    }
+  header { grid-area: h; }
+  nav    { grid-area: n; }
+  main   { grid-area: m; }
+  footer { grid-area: f; }
+</style>
