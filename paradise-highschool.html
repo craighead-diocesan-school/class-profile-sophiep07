@@ -1,4 +1,15 @@
 <body>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap" rel="stylesheet">
+    </head>
     <header>
         <h1>
             Paradise Highschool
@@ -28,9 +39,12 @@
 </body>
 
 <style>
+    p {
+        font-family: 'Cormorant', serif;    
     }
     img {
         height:200px;
+        /* height:150px; */
         padding: 2px;
     }
     div {
@@ -39,25 +53,32 @@
     }
     nav {
         display: block;
+        font-family: 'Nanum Myeongjo', serif;
+        /* text-align: center; */
     }
     h1 {
-        color: #0a122a;
+        color: #f55f23;
+        text-shadow: 2px 2px #75dbcd;
+        font-family: 'Abril Fatface', cursive;        
+        /* color: #0a122a;
         border-radius: px;
-        background-color: #804e49;
+        background-color: #804e49; */
     }
     body {
-        background-color: #e7decd;
+        background-color: #f5cda7;
+        /* background-color: #e7decd; */
     display: grid;
     grid: " h    h    h  " 5em
           " n    m    m  " auto
           " n    m    m  " auto
           " f    f    f  " 5em
           / 1fr  5fr  5fr;
+    }
   header { grid-area: h; }
   nav    { grid-area: n; }
   main   { grid-area: m; }
   footer { grid-area: f; }
-
+    /* body {
     display: grid;
     grid: " h    h    h    h" auto
           " n    n    n    n" auto
@@ -65,9 +86,9 @@
           " .    m    m    ." auto
           " f    f    f    f" auto
           / 1fr  1fr  1fr  1fr;
-  }
+    }
   header { grid-area: h; }
   nav    { grid-area: n; }
   main   { grid-area: m; }
-  footer { grid-area: f; }
+  footer { grid-area: f; } */
 </style>
