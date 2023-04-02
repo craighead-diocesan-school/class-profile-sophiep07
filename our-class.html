@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <meta charset="UTF-8">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap" rel="stylesheet">
+        </head>
+        <header>
+            <h1>
+                Our Class
+            </h1>
+        </header>
+        <nav>
+            <a href="paradise-highschool.html">Home Page</a>
+            <a href="our-class.html">Our Class</a>
+            <a href="student-profiles.html">Student Profiles</a>
+        </nav>
+        <main>
+            <p>
+                Our class of high-performing digital technology students likes to get stuck into any project that takes their fancy.
+            </p>
+            <p>
+                The girls are in their final year at secondary school and are all working on personal projects that interest them.
+            </p>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+    <style>
+        h1 {
+            color: #f55f23;
+            text-shadow: 2px 2px #75dbcd;
+            font-family: 'Abril Fatface', cursive;
+            background-color: #fae3cd78;
+        }
+        nav {
+            margin-right: 25px; 
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            border: 3px solid #f55f23;
+            border-radius: 1em;
+            margin-top: 20px;
+            margin-right: 5px;
+            padding-left: 1em;
+            padding-right: 1em;
+            margin-bottom: 2%;
+            display: block;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+        a:hover {
+            border-color: #75dbcd;
+            background-color: #f55f23;
+        }
+        body {
+            background-color: #f5cda7;
+        display: grid;
+        grid: " h    h    h  " 5em
+              " n    m    m  " auto
+              " n    m    m  " auto
+              " f    f    f  " 5em
+              / 1fr  5fr  5fr;
+        }
+      header { grid-area: h; }
+      nav    { grid-area: n; }
+      main   { grid-area: m; }
+      footer { grid-area: f; }
+    </style>
+</html>
