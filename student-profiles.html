@@ -27,15 +27,17 @@
             <h2>
                 Ruòxī
             </h2>
-            <p>
-                Ruòxī is a boisterous student who likes to get stuck in with practical work. She’s worked on:
-            </p>
-            <ul>
-                <li>Electric cars</li>
-                <li>Robotic arms</li>
-                <li>Sports training systems</li>
-            </ul>
-            <img src="ruòxī.jpg" alt="image of Ruòxī">
+            <div class=container>
+                <img src="ruòxī.jpg" alt="image of Ruòxī">
+                <p>
+                    Ruòxī is a boisterous student who likes to get stuck in with practical work. She’s worked on:
+                    <ul>
+                        <li>Electric cars</li>
+                        <li>Robotic arms</li>
+                        <li>Sports training systems</li>                       
+                    </ul>
+                </p>
+            </div>
             <h2>
                 Priya
             </h2>
@@ -52,12 +54,12 @@
             </h2>
             <p>
                 Aniyah is a mathematician through-and-through. She’s worked on:
+                <ul>
+                    <li>Algorithm classification</li>
+                    <li>Prime number factorisation</li>
+                    <li>Computer graphics</li>
+                </ul>
             </p>
-            <ul>
-                <li>Algorithm classification</li>
-                <li>Prime number factorisation</li>
-                <li>Computer graphics</li>
-            </ul>
             <h2>
                 Lucy
             </h2>
@@ -86,8 +88,15 @@
         </footer>
     </body>
     <style>
-         p {
+        p {
             font-family: 'Cormorant', serif;    
+        }
+        img {
+            height:200px;
+            padding: 2px;
+            border: 5px solid #75dbcd;
+            background-color:#f55f23;
+            margin-right: 5px
         }
         nav {
             margin-right: 25px; 
@@ -120,6 +129,10 @@
             text-shadow: 2px 2px #75dbcd;
             font-family: 'Abril Fatface', cursive;
             background-color: #fae3cd78;    
+        }
+        .container {
+            display:flex;
+            flex-direction: row;
         }
         footer {
             margin-top: 100px;
