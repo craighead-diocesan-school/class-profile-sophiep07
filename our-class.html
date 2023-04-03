@@ -20,7 +20,7 @@
         </header>
         <nav>
             <a href="paradise-highschool-home.html">Home Page</a>
-            <a href="our-class.html">Our Class</a>
+            <a class="active" href="our-class.html">Our Class</a>
             <a href="student-profiles.html">Student Profiles</a>
         </nav>
         <main>
@@ -59,11 +59,17 @@
             padding-right: 1em;
             margin-bottom: 2%;
             display: block;
+            transition: 0.5s;
             font-family: 'Nanum Myeongjo', serif;
+            background-color: #f9b06c;
+        }
+        a.active {
+            border: 3px solid #75dbcd;
         }
         a:hover {
             border-color: #75dbcd;
-            background-color: #f55f23;
+            background-color: #f47d4e;
+            transform:scale(1.1)
         }
         body {
             background-color: #f5cda7;
